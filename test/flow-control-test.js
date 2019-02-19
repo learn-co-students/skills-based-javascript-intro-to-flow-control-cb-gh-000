@@ -42,21 +42,6 @@ describe('flow-control', () => {
       expect(teenager(29)).toEqual("You are not a teenager")
     })
   })
-  function teenager(age){
-  if (age >= 13 && age <= 19){
-    return "You are a teenager!";
-  }
-  else if(age <= 12){
-    return "You are a kid";
-  }
-  else if(age >= 20){
-    return "You are a grownup!"
-  }
-  else {
-    return "You are not a teenager";
-  }
-}
-teenager(20);
 
   describe('ageChecker', () => {
     it('should return "You are a teenager!" if the age is between 13-19', () => {
